@@ -1,0 +1,62 @@
+# Shortcuts
+alias sl=ls
+alias kalabox='ssh -t will@kala "cd /var/www ; bash"'
+alias kala='ssh -t kala@kala "cd /var/www ; bash"'
+alias raspi='ssh pi@raspi'
+alias c=clear
+alias home='cd ~'
+alias g='git'
+alias x=exit
+alias webwork='cd ~/docs/documents/web-work'
+alias documents='cd ~/docs/documents'
+alias repos='cd ~/docs/repos'
+
+# Default command options
+alias df='df -H'
+alias du='du -ch'
+alias rm='rm -I --preserve-root'
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+
+# Customized commands
+alias xgrep='grep -nHr'
+alias xtar='tar -cvzf'
+alias xuntar='tar -zxvf'
+alias xampp='sudo /opt/lampp/lampp start'
+alias xshutdown='sudo shutdown -h now'
+alias xamppoff='sudo /opt/lampp/lampp stop'
+alias xjshint='find -name "*.js" -exec jshint {} \;'
+alias xcsslint='find -name "*.css" -exec csslint {} \;'
+
+# Mini Scripts
+alias killDS='find . -name .DS_Store -print0 | xargs -0 rm -rf'
+alias killfork='find . -name ._\* -exec rm -f {} \;'
+
+# Navigation
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
+alias ~='cd ~'
+
+# For Git
+alias gd='git pull'
+alias gu='git push'
+alias gsts='git status'
+alias gc='git commit -m'
+alias ga='git add .'
+alias gdiff='git diff'
+alias gdiffc='git diff --cached'
+alias glogs='git log --stat'
+alias glogp='git log -p'
+alias glog='git log'
+alias glogg='git log --graph --oneline --decorate'
+alias gcheck='git checkout'
+alias greset='git reset --soft HEAD^'
+alias greseth='git reset HEAD'
+
+# For Drush
+alias dall='drush cc all'
