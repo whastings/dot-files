@@ -20,3 +20,5 @@
 	added = green black
 	changed = green black
 	untracked = green black
+[core]
+        excludesfile = ~/dot-files/gitignore

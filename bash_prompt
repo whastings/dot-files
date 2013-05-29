@@ -2,7 +2,7 @@
 
 # Only show username/host if not default.
 default_username=$USER
-if [ "$HOME" = /home/will -o "$HOME" = /home/kala ]; then
+if [ "$HOME" = /home/vagrant -o "$HOME" = /home/kala ]; then
   default_username="kala"
 elif [ "$HOME" = /home/pi ]; then
   default_username="pi"
