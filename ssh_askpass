@@ -2,6 +2,15 @@
 # NOTE: I only use this on server machines, as it's unnecessary on Ubuntu desktop.
 # Source: http://askubuntu.com/questions/36255/why-wont-ssh-agent-save-my-unencrypted-key-for-later-use/36302#36302
 
+###################################
+# Also, make sure you add the following to ~/.bash_logout
+#
+# if ((agent_started)); then
+#   echo "Killing ssh agent"
+#   ssh-agent -k
+# fi
+###################################
+
 # start agent and set environment variables, if needed
 agent_started=0
 if ! env | grep -q SSH_AGENT_PID >/dev/null; then
