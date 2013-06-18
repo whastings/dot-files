@@ -1,7 +1,8 @@
 # Shortcuts
 alias sl=ls
-alias kalabox='ssh -t will@kala "cd /var/www ; bash"'
-alias kala='ssh -t kala@kala "cd /var/www ; bash"'
+alias kup='cd ~/kalastack && vagrant up --no-provision'
+alias khalt='cd ~/kalastack && vagrant halt'
+alias kssh='ssh -t vagrant@kala "cd /var/www ; bash"'
 alias raspi='ssh pi@raspi'
 alias c=clear
 alias home='cd ~'
