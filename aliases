@@ -2,7 +2,7 @@
 alias sl=ls
 alias kup='cd ~/kalastack && vagrant up --no-provision'
 alias khalt='cd ~/kalastack && vagrant halt'
-alias kssh='ssh -t vagrant@kala "cd /var/www ; bash"'
+alias kssh='cd ~/kalastack && vagrant ssh'
 alias raspi='ssh pi@raspi'
 alias c=clear
 alias home='cd ~'
