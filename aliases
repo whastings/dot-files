@@ -11,6 +11,7 @@ alias x=exit
 alias webwork='cd ~/docs/documents/web-work'
 alias documents='cd ~/docs/documents'
 alias repos='cd ~/docs/repos'
+alias desktop='cd ~/Desktop'
 
 # Default command options
 alias df='df -H'
