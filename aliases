@@ -30,6 +30,8 @@ alias xshutdown='sudo shutdown -h now'
 alias xamppoff='sudo /opt/lampp/lampp stop'
 alias xjshint='find -name "*.js" -exec jshint {} \;'
 alias xcsslint='find -name "*.css" -exec csslint {} \;'
+alias seleniumhub='java -jar ~/bin/selenium.jar -role hub'
+alias seleniumnode='java -jar ~/bin/selenium.jar -role node -hub http://1.3.3.7:4444/grid/register -browser browserName=firefox,version=21,maxInstances=1'
 
 # Mini Scripts
 alias killDS='find . -name .DS_Store -print0 | xargs -0 rm -rf'
