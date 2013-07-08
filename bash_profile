@@ -10,12 +10,8 @@
 ###################################
 
 # Load all other config files.
-for file in ~/dot-files/{colors,bash_prompt,exports,aliases}; do
+for file in ~/dot-files/{bash_prompt,exports,aliases}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file
 
-# Load Git autocompletion script if it's available.
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
-fi
