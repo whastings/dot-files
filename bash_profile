@@ -15,3 +15,4 @@ for file in ~/dot-files/{bash_prompt,exports,aliases}; do
 done
 unset file
 
+cd /var/www
