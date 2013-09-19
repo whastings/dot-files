@@ -22,3 +22,5 @@
 	untracked = green black
 [core]
         excludesfile = ~/dot-files/gitignore
+[push]
+	default = simple
