@@ -16,3 +16,11 @@ done
 unset file
 
 cd /var/www
+
+# Make control+s keyboard shortcut available.
+stty -ixon
+
+# Load Git autocompletion script if it's available.
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi

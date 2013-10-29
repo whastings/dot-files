@@ -1,8 +1,8 @@
 # Shortcuts
 alias sl=ls
-alias kup='cd ~/kalastack && vagrant up --no-provision'
-alias khalt='cd ~/kalastack && vagrant halt'
-alias kssh='cd ~/kalastack && vagrant ssh'
+alias kup='cd ~/.kalabox/kalastack && vagrant up --no-provision'
+alias khalt='cd ~/.kalabox/kalastack && vagrant halt'
+alias kssh='cd ~/.kalabox/kalastack && vagrant ssh'
 alias raspi='ssh pi@raspi'
 alias c=clear
 alias home='cd ~'
@@ -12,6 +12,7 @@ alias webwork='cd ~/docs/documents/web-work'
 alias documents='cd ~/docs/documents'
 alias repos='cd ~/docs/repos'
 alias desktop='cd ~/Desktop'
+alias serve='python -m SimpleHTTPServer'
 
 # Default command options
 alias df='df -H'
@@ -20,6 +21,7 @@ alias rm='rm -I --preserve-root'
 alias mv='mv -i'
 alias cp='cp -i'
 alias ln='ln -i'
+alias composer='php ~/bin/composer.phar'
 
 # Customized commands
 alias xgrep='grep -nHr'
