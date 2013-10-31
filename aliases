@@ -68,3 +68,4 @@ alias gunassume='git update-index --no-assume-unchanged'
 
 # For Drush
 alias dall='drush cc all'
+alias admin_menu='drush dis navbar -y && drush en admin_menu admin_menu_toolbar -y'
