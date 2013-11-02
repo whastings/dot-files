@@ -15,7 +15,7 @@ for file in ~/dot-files/{colors,bash_prompt,exports,aliases}; do
 done
 unset file
 
-# Make control+s keyboard shortcut available.
+# Make certain keyboard shortcuts available.
 stty -ixon
 
 # Load Git autocompletion script if it's available.

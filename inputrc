@@ -2,7 +2,15 @@
 # Link to ~/.inputrc with:
 #   ln -s ~/dot-files/inputrc ~/.inputrc
 
+# Make sure we still get /etc/inputrc.
+$include /etc/inputrc
+
 Control-s: "git status\n"
 Control-p: "git add .\n"
 Control-f: "git diff\n"
 Control-g: "git diff --cached\n"
+
+# Run last command with control + up-arrow.
+"\e[1;5A": "!!\n"
+"\e[5A": "!!\n"
+"\e\e[A": "!!\n"
