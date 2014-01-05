@@ -10,7 +10,7 @@
 ###################################
 
 # Load all other config files.
-for file in ~/dot-files/{colors,bash_prompt,exports,aliases}; do
+for file in ~/dot-files/{colors,bash_prompt,exports,aliases,functions}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file

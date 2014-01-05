@@ -1,0 +1,14 @@
+
+# Opens current directory in file browser when no arguments are passed,
+# or opens argument in default editor.
+function o() {
+  if [ $# -eq 0 ]; then
+    if hash nautilus 2>/dev/null; then
+      nautilus .
+    else
+      open .
+    fi
+  else
+    $EDITOR "$@"
+  fi
+}
