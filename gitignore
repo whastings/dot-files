@@ -10,4 +10,16 @@ nbproject/
 # OS Files:
 ._*
 *.DS_Store
+Thumbs.db
 
+# Always-ignore extensions:
+*~
+*.diff
+*.err
+*.log
+*.orig
+*.pyc
+*.rej
+*.sass-cache
+*.sw?
+*.vi

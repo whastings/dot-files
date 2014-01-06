@@ -1,9 +1,13 @@
-# Custom key-bindings.
+# Custom key-bindings and settings.
 # Link to ~/.inputrc with:
 #   ln -s ~/dot-files/inputrc ~/.inputrc
 
 # Make sure we still get /etc/inputrc.
 $include /etc/inputrc
+
+###############
+# Key-Bindings:
+###############
 
 Control-s: "git status\n"
 Control-p: "git add .\n"
@@ -14,3 +18,8 @@ Control-g: "git diff --cached\n"
 "\e[1;5A": "!!\n"
 "\e[5A": "!!\n"
 "\e\e[A": "!!\n"
+
+###########
+# Settings:
+###########
+set completion-ignore-case on

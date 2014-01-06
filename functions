@@ -12,3 +12,13 @@ function o() {
     $EDITOR "$@"
   fi
 }
+
+# Opens current directory in Sublime Text when no arguments are passed,
+# or opens argument in Sublime.
+function s() {
+  if [ $# -eq 0 ]; then
+    subl .
+  else
+    subl "$@"
+  fi
+}
