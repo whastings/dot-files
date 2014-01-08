@@ -66,6 +66,8 @@ alias greset='git reset --soft HEAD^'
 alias greseth='git reset HEAD'
 alias gassume='git update-index --assume-unchanged'
 alias gunassume='git update-index --no-assume-unchanged'
+alias stash='git stash'
+alias unstash='git stash apply stash@{0}'
 
 # For Drush
 alias dall='drush cc all'
