@@ -26,5 +26,10 @@ fi
 # Set shell options.
 shopt -s cdspell # Autocorrect typos in path names when using `cd`
 
+# Sources:
 # If possible, add tab completion for many more commands.
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+if [ -f ~/.nvm/nvm.sh ]; then
+  source ~/.nvm/nvm.sh
+  nvm alias default 0.10 > /dev/null
+fi
