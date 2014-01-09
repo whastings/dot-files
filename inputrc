@@ -19,6 +19,10 @@ Control-g: "git diff --cached\n"
 "\e[5A": "!!\n"
 "\e\e[A": "!!\n"
 
+# Search based on the typed line when browsing command history.
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
 ###########
 # Settings:
 ###########
