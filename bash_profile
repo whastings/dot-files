@@ -33,3 +33,4 @@ if [ -f ~/.nvm/nvm.sh ]; then
   source ~/.nvm/nvm.sh
   nvm alias default 0.10 > /dev/null
 fi
+[ -d ~/.rbenv ] && eval "$(rbenv init -)"
