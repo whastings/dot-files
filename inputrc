@@ -10,7 +10,7 @@ $include /etc/inputrc
 ###############
 
 Control-s: "git status\n"
-Control-p: "git add .\n"
+Control-p: "git add -A\n"
 Control-f: "git diff\n"
 Control-g: "git diff --cached\n"
 
