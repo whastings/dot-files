@@ -1,0 +1,5 @@
+# Default rspec settings.
+
+--color
+--format documentation
+--order=default
