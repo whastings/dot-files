@@ -1,10 +1,6 @@
 
-# Set default editor to Sublime Text, falling back to nano.
-if hash subl 2>/dev/null; then
-  export EDITOR="subl"
-else
-  export EDITOR="nano"
-fi
+# Set default editor to VIM.
+export EDITOR="vim"
 
 # Path:
 export PATH="$HOME/.rbenv/bin:$PATH"

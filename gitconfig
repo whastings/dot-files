@@ -22,6 +22,6 @@
 	untracked = green black
 [core]
   excludesfile = ~/dot-files/gitignore
-  editor = nano
+  editor = vim
 [push]
 	default = simple
