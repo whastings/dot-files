@@ -60,9 +60,8 @@ alias gdiff='git diff'
 alias gdiffc='git diff --cached'
 alias glogs='git log --stat'
 alias glogp='git log -p'
-alias glog='git log'
 alias glogg='git log --graph --oneline --decorate'
-alias glogsh="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short" # Based on: http://gitimmersion.com/lab_10.html
+alias glog="git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short" # Based on: http://gitimmersion.com/lab_10.html
 alias gcheck='git checkout'
 alias go='git checkout'
 alias greset='git reset --soft HEAD^'
