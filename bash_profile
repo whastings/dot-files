@@ -34,3 +34,9 @@ if [ -f ~/.nvm/nvm.sh ]; then
   nvm alias default 0.10 > /dev/null
 fi
 [ -d ~/.rbenv ] && eval "$(rbenv init -)"
+
+# Enter tmux if it's available.
+if [ -z "$TMUX" ]
+then
+  ~/dot-files/scripts/enter-default-tmux
+fi

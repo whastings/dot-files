@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Helps with starting a new tmux session.
+# Source: https://github.com/ruggeri/dotfiles
+
+if `tmux has-session -t default`
+then
+  exec tmux attach -t default
+else
+  exec tmux new-session -s default
+fi
