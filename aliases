@@ -13,6 +13,8 @@ alias documents='cd ~/docs/documents'
 alias repos='cd ~/docs/repos'
 alias desktop='cd ~/Desktop'
 alias serve='python -m SimpleHTTPServer'
+alias b='bundle'
+alias be='bundle exec'
 
 # Default command options
 alias df='df -H'
