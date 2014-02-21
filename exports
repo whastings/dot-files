@@ -4,6 +4,7 @@ export EDITOR="vim"
 
 # Path:
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/dot-files/scripts:$PATH"
 
 # History:
 # Make some commands not show up in history.
