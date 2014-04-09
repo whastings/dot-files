@@ -15,6 +15,7 @@ alias desktop='cd ~/Desktop'
 alias serve='python -m SimpleHTTPServer'
 alias b='bundle'
 alias be='bundle exec'
+alias sshlock='ssh-add -D'
 
 # Default command options
 alias df='df -H'
@@ -79,6 +80,9 @@ alias unstash='git stash apply stash@{0}'
 # For Drush
 alias dall='drush cc all'
 alias admin_menu='drush dis navbar -y && drush en admin_menu admin_menu_toolbar -y'
+
+# For Ruby & Rails
+alias rs='bundle exec rails server'
 
 # Networking
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
