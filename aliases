@@ -83,6 +83,8 @@ alias dall='drush cc all'
 alias admin_menu='drush dis navbar -y && drush en admin_menu admin_menu_toolbar -y'
 
 # For Ruby & Rails
+alias rmigrate='bundle exec rake db:migrate'
+alias rtprepare='bundle exec rake db:test:prepare'
 alias rs='bundle exec rails server'
 
 # Networking
