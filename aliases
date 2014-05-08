@@ -88,6 +88,7 @@ alias bstubs='bundle install --binstubs .bundle/bin'
 alias rmigrate='bundle exec rake db:migrate'
 alias rtprepare='bundle exec rake db:test:prepare'
 alias rs='bundle exec rails server'
+alias rc='bundle exec rails console'
 
 # Networking
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
