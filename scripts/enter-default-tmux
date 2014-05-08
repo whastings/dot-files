@@ -7,5 +7,5 @@ if `tmux has-session -t default`
 then
   exec tmux attach -t default
 else
-  exec tmux new-session -s default
+  exec tmux new-session -s default 'tmuxinator start home'
 fi
