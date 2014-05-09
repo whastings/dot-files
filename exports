@@ -18,3 +18,4 @@ export LANG="en_US"
 export LC_ALL="en_US.UTF-8"
 
 export TERM="screen-256color"
+export PROMPT_DIRTRIM=3 # Only show three directories in prompt string.
