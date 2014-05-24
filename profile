@@ -10,25 +10,23 @@
 ###################################
 
 # Load all other config files.
-for file in ~/dot-files/{colors,bash_prompt,exports,aliases,functions}; do
+for file in ~/dot-files/{colors,exports,aliases,functions}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file
 
+# Load shell-specific config.
+if [ -n "$BASH" ]; then
+  source ~/dot-files/bashrc
+fi
+if [ -n "$ZSH_NAME" ]; then
+  source ~/dot-files/zshrc
+fi
+
 # Make certain keyboard shortcuts available.
 stty -ixon
 
-# Load Git autocompletion script if it's available.
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
-fi
-
-# Set shell options.
-shopt -s cdspell # Autocorrect typos in path names when using `cd`
-
 # Sources:
-# If possible, add tab completion for many more commands.
-[ -f /etc/bash_completion ] && source /etc/bash_completion
 if [ -f ~/.nvm/nvm.sh ]; then
   source ~/.nvm/nvm.sh
   nvm alias default 0.10 > /dev/null
