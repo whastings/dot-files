@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="whastings"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -43,18 +43,17 @@ ZSH_THEME="robbyrussell"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=$HOME/dot-files/zsh
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(whastings)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/home/xm488/bin:/home/xm488/dot-files/scripts:/home/xm488/.rbenv/bin:/home/xm488/.rbenv/shims:/home/xm488/.nvm/v0.10.24/bin:/home/xm488/dot-files/scripts:/home/xm488/.rbenv/bin:/home/xm488/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/heroku/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
