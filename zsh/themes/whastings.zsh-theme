@@ -1,1 +1,1 @@
-PROMPT='%{$FG[118]%}%~%B$%b%{$reset_color%} '
+PROMPT='%{$FG[118]%}%3~%B$%b%{$reset_color%} '
