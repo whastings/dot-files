@@ -23,3 +23,7 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
+
+# Add back beginning and end of line shortcuts in Vim mode:
+bindkey '^a' vi-beginning-of-line
+bindkey '^e' vi-end-of-line
