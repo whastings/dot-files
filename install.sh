@@ -9,6 +9,7 @@ echo "if [ -f ~/dot-files/bash_profile ]; then\n. ~/dot-files/bash_profile\nfi" 
 ln -s "$CONFIG_DIR/gemrc" ~/.gemrc
 ln -s "$CONFIG_DIR/gitconfig" ~/.gitconfig
 ln -s "$CONFIG_DIR/inputrc" ~/.inputrc
+ln -s "$CONFIG_DIR/jshintrc" ~/.jshintrc
 ln -s "$CONFIG_DIR/pryrc" ~/.pryrc
 ln -s "$CONFIG_DIR/rspec" ~/.rspec
 ln -s "$CONFIG_DIR/tmux.conf" ~/.tmux.conf

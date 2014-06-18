@@ -1,0 +1,34 @@
+{
+  "browser": true,
+  "camelcase": true,
+  "debug": true,
+  "eqeqeq": true,
+  "eqnull": true,
+  "expr": true,
+  "globalstrict": true,
+  "predef": [
+    "_",
+    "$",
+    "alert",
+    "Backbone",
+    "beforeEach",
+    "console",
+    "describe",
+    "document",
+    "expect",
+    "exports",
+    "Handlebars",
+    "HandlebarsTemplates",
+    "it",
+    "module",
+    "require",
+    "window"
+  ],
+  "jquery": true,
+  "node": true,
+  "proto": true,
+  "strict": false,
+  "sub": true,
+  "undef": true
+}
+
