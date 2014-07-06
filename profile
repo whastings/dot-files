@@ -30,6 +30,7 @@ stty -ixon
 if [ -f ~/.nvm/nvm.sh ]; then
   source ~/.nvm/nvm.sh
   nvm alias default 0.10 > /dev/null
+  export NODE_PATH=$(npm root -g):$NODE_PATH
 fi
 [ -d ~/.rbenv ] && eval "$(rbenv init -)"
 
