@@ -20,7 +20,6 @@ alias sshlock='ssh-add -D'
 # Default command options
 alias df='df -H'
 alias du='du -ch'
-alias rm='rm -I --preserve-root'
 alias mv='mv -i'
 alias cp='cp -i'
 alias ln='ln -i'
@@ -78,6 +77,7 @@ alias gassume='git update-index --assume-unchanged'
 alias gunassume='git update-index --no-assume-unchanged'
 alias stash='git stash'
 alias unstash='git stash apply stash@{0}'
+alias amend='git commit --amend'
 
 # For Drush
 alias dall='drush cc all'
