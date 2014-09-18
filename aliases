@@ -58,6 +58,7 @@ alias ~='cd ~'
 
 # For Git
 alias gd='git pull'
+alias gdr='git pull --rebase'
 alias gu='git push'
 alias gsts='git status'
 alias gc='git commit -m'
