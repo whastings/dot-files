@@ -21,7 +21,10 @@ if [ -f ~/.nvm/nvm.sh ]; then
   nvm alias default 0.10 > /dev/null
   export NODE_PATH=$(npm root -g):$NODE_PATH
 fi
-[ -d ~/.rbenv ] && eval "$(rbenv init -)"
+if [ -d ~/.rbenv ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
 # Load shell-specific config.
 if [ -n "$BASH" ]; then
