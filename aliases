@@ -79,7 +79,8 @@ alias gassume='git update-index --assume-unchanged'
 alias gunassume='git update-index --no-assume-unchanged'
 alias stash='git stash'
 alias unstash='git stash apply stash@{0}'
-alias amend='git commit --amend'
+alias amend='git commit --amend --date="$(date)"'
+alias gr='git remote'
 
 # For Drush
 alias dall='drush cc all'
