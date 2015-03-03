@@ -16,6 +16,10 @@ git_add() { \print; zle accept-line; ga; zle accept-line }
 zle -N git_add
 bindkey '^p' git_add
 
+open_bg_process() { fg }
+zle -N open_bg_process
+bindkey '^o' open_bg_process
+
 # Enable history search via arrow keys.
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
