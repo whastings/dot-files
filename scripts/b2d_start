@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+boot2docker start
+sudo b2d_nfs
