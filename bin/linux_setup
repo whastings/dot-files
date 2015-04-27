@@ -8,15 +8,23 @@ sudo apt-get install -y --no-install-recommends \
   curl \
   gimp \
   git-core \
+  keepassx \
   libappindicator1 \
   libindicator7 \
+  libreadline-dev \
   libssl-dev \
   libxss1 \
+  libyaml-dev \
+  libxml2-dev \
+  libxslt1-dev \
+  libcurl4-openssl-dev \
+  python-software-properties \
+  libffi-dev \
   python-pip \
   tmux \
   vim \
   zsh
-  
+
 # Download Chrome.
 curl \
   https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \

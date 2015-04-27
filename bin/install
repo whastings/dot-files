@@ -1,19 +1,48 @@
 #!/usr/bin/env bash
 
-CONFIG_DIR="$HOME/dot-files"
+DOT_FILES="$HOME/dot-files"
+CONFIG_DIR="$DOT_FILES/config"
+RUBY_VERSION=2.2.0
 
-# Add sourcing of config to ~/.bashrc.
-echo "if [ -f ~/dot-files/bash_profile ]; then\n. ~/dot-files/bash_profile\nfi" >> ~/.bashrc
+# Symlink config files.
+home_files=( gemrc gitconfig inputrc jshintrc pryrc rspec tmux.conf zshrc )
+for file in "${home_files[@]}"
+do
+  ln -s -f $CONFIG_DIR/$file $HOME/.$file
+done
 
-# Symlink home directory files.
-ln -s "$CONFIG_DIR/gemrc" ~/.gemrc
-ln -s "$CONFIG_DIR/gitconfig" ~/.gitconfig
-ln -s "$CONFIG_DIR/inputrc" ~/.inputrc
-ln -s "$CONFIG_DIR/jshintrc" ~/.jshintrc
-ln -s "$CONFIG_DIR/pryrc" ~/.pryrc
-ln -s "$CONFIG_DIR/rspec" ~/.rspec
-ln -s "$CONFIG_DIR/tmux.conf" ~/.tmux.conf
+# Install NVM and Node.
+git clone https://github.com/creationix/nvm.git $HOME/.nvm && \
+  cd $HOME/.nvm && \
+  git checkout `git describe --abbrev=0 --tags`
+source $HOME/.nvm/nvm.sh
+nvm install iojs
 
-# Download git-completion.bash.
-GIT_COMPLETION_URL="http://git.kernel.org/cgit/git/git.git/plain/contrib/completion/git-completion.bash?id=HEAD"
-curl -o ~/.git-completion.bash $GIT_COMPLETION_URL
+# Install rbenv and Ruby.
+git clone https://github.com/sstephenson/rbenv.git $HOME/.rbenv
+git clone \
+  https://github.com/sstephenson/ruby-build.git \
+  $HOME/.rbenv/plugins/ruby-build
+cd $HOME/.rbenv/plugins/ruby-build
+git checkout `git describe --abbrev=0 --tags`
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+rbenv install --verbose $RUBY_VERSION
+rbenv global $RUBY_VERSION
+
+# Install Node global packages.
+npm install -g \
+  grunt-cli \
+  gulp \
+  jshint
+
+# Install Ruby gems.
+gem install \
+  bundler \
+  compass \
+  sass \
+  tmuxinator
+
+# Install Vim config.
+git clone git@github.com:whastings/vim-config.git $HOME/.vim
+$HOME/.vim/bin/install
