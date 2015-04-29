@@ -24,13 +24,16 @@ if [ -d ~/.rbenv ]; then
   eval "$(rbenv init -)"
   rbenv global 2.2.0
 fi
+if [ -f $DOT_FILES/vendor/z/z.sh ]; then
+  source $DOT_FILES/vendor/z/z.sh
+fi
 
 # Load ENV variable definitions and overrides.
 source $DOT_FILES/exports
 
 # Load machine-specific config if it's there.
-if [ -f ~/dot-files/custom ]; then
-  source ~/dot-files/custom
+if [ -f $DOT_FILES/custom ]; then
+  source $DOT_FILES/custom
 fi
 
 # Make certain keyboard shortcuts available.

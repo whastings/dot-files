@@ -34,7 +34,9 @@ rbenv global $RUBY_VERSION
 npm install -g \
   grunt-cli \
   gulp \
-  jshint
+  jshint \
+  replace \
+  wr
 
 # Install Ruby gems.
 gem install \
@@ -46,3 +48,15 @@ gem install \
 # Install Vim config.
 git clone git@github.com:whastings/vim-config.git $HOME/.vim
 $HOME/.vim/bin/install
+
+# Install Git-hosted dependencies.
+VENDOR_DIR=$DOT_FILES/vendor
+VENDOR_BIN=$DOT_FILES/scripts/vendor
+function ln_vendor() {
+  ln -s $VENDOR_DIR/$1 $VENDOR_BIN/$2
+}
+cd $VENDOR_DIR
+git clone https://github.com/rupa/z.git # z
+git clone https://github.com/sjl/friendly-find.git ffind #ffind
+chmod +x ffind/ffind
+ln_vendor ffind/ffind ffind

@@ -4,6 +4,7 @@ export EDITOR="vim"
 
 # Path:
 export PATH="$HOME/dot-files/scripts:$PATH"
+export PATH="$HOME/dot-files/scripts/vendor:$PATH"
 export PATH="$HOME/dot-files/vendor/powerline/scripts:$PATH"
 
 # Shortcuts:
