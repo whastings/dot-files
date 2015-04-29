@@ -21,7 +21,7 @@
 	changed = green black
 	untracked = green black
 [core]
-  excludesfile = ~/dot-files/gitignore
+  excludesfile = ~/dot-files/config/gitignore
   editor = vim
 [push]
 	default = simple

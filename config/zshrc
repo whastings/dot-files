@@ -28,6 +28,11 @@ fi
 # Load ENV variable definitions and overrides.
 source $DOT_FILES/exports
 
+# Load machine-specific config if it's there.
+if [ -f ~/dot-files/custom ]; then
+  source ~/dot-files/custom
+fi
+
 # Make certain keyboard shortcuts available.
 stty -ixon
 
