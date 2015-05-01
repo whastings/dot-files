@@ -40,6 +40,6 @@ fi
 stty -ixon
 
 # Enter tmux if it's available.
-if [ -z "$TMUX" ]; then
+if [ type -P tmux &>/dev/null ]; then
   $DOT_FILES/scripts/enter-default-tmux
 fi
