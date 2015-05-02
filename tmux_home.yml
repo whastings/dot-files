@@ -1,7 +1,7 @@
 # ~/.tmuxinator/home.yml
 
 name: home
-root: ~/docs/repos
+root: ~/workspace
 
 # Optional tmux socket
 # socket_name: foo
