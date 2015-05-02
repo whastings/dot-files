@@ -9,7 +9,9 @@ export PATH="$HOME/dot-files/vendor/powerline/scripts:$PATH"
 
 # Shortcuts:
 export desktop="$HOME/Desktop"
-export repos="$HOME/docs/repos"
+export documents="$HOME/Documents"
+export docs=$documents
+export work="$HOME/workspace"
 
 # History:
 # Make some commands not show up in history.
@@ -27,4 +29,4 @@ export PROMPT_DIRTRIM=3 # Only show three directories in prompt string.
 
 # $CDPATH is like $PATH for cd. You can change to directories within
 # without specifying leading path:
-export CDPATH="$CDPATH:$repos"
+export CDPATH="$CDPATH:$work"

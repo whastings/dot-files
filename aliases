@@ -12,11 +12,13 @@ alias webwork='cd ~/docs/documents/web-work'
 alias documents='cd ~/docs/documents'
 alias repos='cd ~/docs/repos'
 alias desktop='cd ~/Desktop'
+alias docs='cd $documents'
 alias serve='python -m SimpleHTTPServer'
 alias b='bundle'
 alias be='bundle exec'
 alias sshlock='ssh-add -D'
 alias v='vim'
+alias work='cd $work'
 
 # Default command options
 alias df='df -H'
