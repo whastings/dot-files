@@ -5,7 +5,7 @@ CONFIG_DIR="$DOT_FILES/config"
 RUBY_VERSION=2.2.0
 
 # Symlink config files.
-home_files=( gemrc gitconfig inputrc jshintrc pryrc rspec tmux.conf zshrc )
+home_files=( eslintrc gemrc gitconfig inputrc jshintrc pryrc rspec tmux.conf zshrc )
 for file in "${home_files[@]}"
 do
   ln -s -f $CONFIG_DIR/$file $HOME/.$file
@@ -32,6 +32,7 @@ rbenv global $RUBY_VERSION
 
 # Install Node global packages.
 npm install -g \
+  eslint \
   grunt-cli \
   gulp \
   jshint \

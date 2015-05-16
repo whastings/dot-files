@@ -1,0 +1,48 @@
+{
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "env": {
+    "amd": true,
+    "browser": true,
+    "es6": true,
+    "jquery": true,
+    "mocha": true,
+    "node": true
+  },
+  "globals": {
+    "_": true,
+    "$": true,
+    "alert": false,
+    "angular": true,
+    "Backbone": true,
+    "console": false,
+    "DS": true,
+    "Ember": true,
+    "Handlebars": true,
+    "HandlebarsTemplates": true
+  },
+  "rules": {
+    "dot-notation": 2,
+    "eqeqeq": 2,
+    "quotes": [2, "single"],
+    "no-underscore-dangle": 0,
+    "no-debugger": 2,
+    "no-dupe-args": 2,
+    "no-dupe-keys": 2,
+    "no-empty": 2,
+    "no-extra-bind": 2,
+    "no-extra-semi": 2,
+    "no-func-assign": 2,
+    "no-invalid-regexp": 2,
+    "no-redeclare": 2,
+    "no-shadow-restricted-names": 2,
+    "no-unreachable": 2,
+    "radix": 2,
+    "semi": [2, "always"],
+    "use-isnan": 2,
+    "valid-jsdoc": 2,
+    "valid-typeof": 2
+  }
+}
