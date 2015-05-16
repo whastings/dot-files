@@ -33,6 +33,7 @@ rbenv global $RUBY_VERSION
 # Install Node global packages.
 npm install -g \
   eslint \
+  eslint-plugin-react \
   grunt-cli \
   gulp \
   jshint \

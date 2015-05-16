@@ -23,6 +23,9 @@
     "Handlebars": true,
     "HandlebarsTemplates": true
   },
+  "plugins": [
+    "react"
+  ],
   "rules": {
     "dot-notation": 2,
     "eqeqeq": 2,

@@ -2,4 +2,5 @@
 
 npm install -g \
   eslint \
+  eslint-plugin-react \
   marked
