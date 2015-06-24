@@ -19,6 +19,7 @@ alias be='bundle exec'
 alias sshlock='ssh-add -D'
 alias v='vim'
 alias work='cd $work'
+alias dc='docker-compose'
 
 # Default command options
 alias df='df -H'
