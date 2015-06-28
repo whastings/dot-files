@@ -6,6 +6,7 @@ sudo apt-get update
 sudo apt-get install -y --no-install-recommends \
   build-essential \
   curl \
+  editorconfig \
   gimp \
   git-core \
   keepassx \
