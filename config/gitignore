@@ -24,3 +24,6 @@ Thumbs.db
 *.sass-cache
 *.sw?
 *.vi
+
+# Others:
+npm-debug.log
