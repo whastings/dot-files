@@ -32,12 +32,14 @@ rbenv global $RUBY_VERSION
 
 # Install Node global packages.
 npm install -g \
+  bower \
   eslint \
   eslint-plugin-react \
   grunt-cli \
   gulp \
   jshint \
   marked \
+  node-sass \
   replace \
   wr
 
@@ -49,7 +51,7 @@ gem install \
   tmuxinator
 
 # Install Vim config.
-git clone git@github.com:whastings/vim-config.git $HOME/.vim
+git clone https://github.com/whastings/vim-config.git $HOME/.vim
 $HOME/.vim/bin/install
 
 # Install Git-hosted dependencies.
