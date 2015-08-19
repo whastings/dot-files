@@ -39,7 +39,6 @@ npm install -g \
   gulp \
   jshint \
   marked \
-  node-sass \
   replace \
   wr
 
