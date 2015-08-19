@@ -59,6 +59,7 @@ VENDOR_BIN=$DOT_FILES/scripts/vendor
 function ln_vendor() {
   ln -s $VENDOR_DIR/$1 $VENDOR_BIN/$2
 }
+mkdir $VENDOR_BIN
 cd $VENDOR_DIR
 git clone https://github.com/rupa/z.git # z
 git clone https://github.com/sjl/friendly-find.git ffind #ffind
