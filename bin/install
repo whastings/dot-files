@@ -49,6 +49,9 @@ gem install \
   sass \
   tmuxinator
 
+# Set up Tmuxinator config.
+ln -s $DOT_FILES/tmux_home.yml $HOME/.tmuxinator/home.yml
+
 # Install Vim config.
 git clone https://github.com/whastings/vim-config.git $HOME/.vim
 $HOME/.vim/bin/install
