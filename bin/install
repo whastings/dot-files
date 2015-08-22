@@ -57,6 +57,9 @@ git clone https://github.com/whastings/vim-config.git $HOME/.vim
 $HOME/.vim/bin/install
 
 # Install Git-hosted dependencies.
+cd $DOT_FILES
+git submodule init
+git submodule update
 VENDOR_DIR=$DOT_FILES/vendor
 VENDOR_BIN=$DOT_FILES/scripts/vendor
 function ln_vendor() {
