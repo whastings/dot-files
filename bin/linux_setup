@@ -39,9 +39,8 @@ if [ ! "$TERMINAL_ONLY" == "true" ]; then
 fi
 
 # Set up zsh.
-wget \
-  https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh \
-  -O - | zsh
+sh -c \
+  "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 chsh -s `which zsh`
 
 # Download Docker.
