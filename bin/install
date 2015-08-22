@@ -50,6 +50,7 @@ gem install \
   tmuxinator
 
 # Set up Tmuxinator config.
+mkdir $HOME/.tmuxinator
 ln -s $DOT_FILES/tmux_home.yml $HOME/.tmuxinator/home.yml
 
 # Install Vim config.
