@@ -44,7 +44,7 @@
     "no-shadow": 0,
     "no-shadow-restricted-names": 2,
     "no-unreachable": 2,
-    "no-use-before-define": ["nofunc", 2],
+    "no-use-before-define": [2, "nofunc"],
     "radix": 2,
     "semi": [2, "always"],
     "use-isnan": 2,
