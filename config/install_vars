@@ -1,0 +1,2 @@
+export NODE_GLOBAL_MODULES='bower eslint eslint-plugin-react grunt-cli gulp jshint marked replace wr'
+export NODE_VERSION=5

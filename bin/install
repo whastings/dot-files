@@ -4,6 +4,8 @@ DOT_FILES="$HOME/dot-files"
 CONFIG_DIR="$DOT_FILES/config"
 RUBY_VERSION=2.2.0
 
+source $DOT_FILES/config/install_vars
+
 # Symlink config files.
 home_files=( eslintrc gemrc gitconfig inputrc jshintrc pryrc rspec tmux.conf zshrc )
 for file in "${home_files[@]}"
@@ -16,7 +18,7 @@ git clone https://github.com/creationix/nvm.git $HOME/.nvm && \
   cd $HOME/.nvm && \
   git checkout `git describe --abbrev=0 --tags`
 source $HOME/.nvm/nvm.sh
-nvm install iojs
+nvm install $NODE_VERSION
 
 # Install rbenv and Ruby.
 git clone https://github.com/sstephenson/rbenv.git $HOME/.rbenv
@@ -31,16 +33,7 @@ rbenv install --verbose $RUBY_VERSION
 rbenv global $RUBY_VERSION
 
 # Install Node global packages.
-npm install -g \
-  bower \
-  eslint \
-  eslint-plugin-react \
-  grunt-cli \
-  gulp \
-  jshint \
-  marked \
-  replace \
-  wr
+npm install -g $NODE_GLOBAL_MODULES
 
 # Install Ruby gems.
 gem install \

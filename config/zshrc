@@ -1,5 +1,7 @@
 export DOT_FILES=$HOME/dot-files
 
+source $DOT_FILES/config/install_vars
+
 # Load custom config files.
 for file in $DOT_FILES/{colors,aliases,functions}; do
   [ -r "$file" ] && source "$file"
@@ -9,7 +11,7 @@ unset file
 # Source dependencies.
 if [ -f ~/.nvm/nvm.sh ]; then
   source ~/.nvm/nvm.sh
-  nvm alias default iojs > /dev/null
+  nvm alias default $NODE_VERSION > /dev/null
   export NODE_PATH=$(npm root -g):$NODE_PATH
 fi
 if [ -d ~/.rbenv ]; then
