@@ -20,6 +20,7 @@ alias sshlock='ssh-add -D'
 alias v='vim'
 alias work='cd $work'
 alias dc='docker-compose'
+alias nr='npm run'
 
 # Default command options
 alias df='df -H'
