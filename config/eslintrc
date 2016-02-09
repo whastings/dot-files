@@ -24,6 +24,7 @@
     "Handlebars": true,
     "HandlebarsTemplates": true
   },
+  "parser": "babel-eslint",
   "plugins": [
     "react"
   ],
@@ -47,6 +48,7 @@
     "no-use-before-define": [2, "nofunc"],
     "radix": 2,
     "semi": [2, "always"],
+    "strict": 0,
     "use-isnan": 2,
     "valid-jsdoc": 2,
     "valid-typeof": 2
