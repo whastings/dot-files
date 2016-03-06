@@ -65,3 +65,8 @@ git clone https://github.com/rupa/z.git # z
 git clone https://github.com/sjl/friendly-find.git ffind #ffind
 chmod +x ffind/ffind
 ln_vendor ffind/ffind ffind
+
+# diff-highlight
+curl -o $VENDOR_BIN/diff-highlight \
+  https://raw.githubusercontent.com/git/git/master/contrib/diff-highlight/diff-highlight
+chmod +x $VENDOR_BIN/diff-highlight

@@ -1,5 +1,5 @@
 # Git settings.
-# Link to ~/.gitconfig with: ln -s ~/dot-files/gitconfig ~/.gitconfig
+# Link to ~/.gitconfig with: ln -s ~/dot-files/config/gitconfig ~/.gitconfig
 
 [user]
   name = Will Hastings
@@ -16,6 +16,11 @@
   frag = magenta bold
   old = red bold
   new = green bold
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
 [color "status"]
   added = green black
   changed = green black
@@ -23,5 +28,9 @@
 [core]
   excludesfile = ~/dot-files/config/gitignore
   editor = vim
+[pager]
+  log = diff-highlight | less
+  show = diff-highlight | less
+  diff = diff-highlight | less
 [push]
   default = simple
