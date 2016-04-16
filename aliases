@@ -20,6 +20,7 @@ alias sshlock='ssh-add -D'
 alias v='vim'
 alias work='cd $work'
 alias dc='docker-compose'
+alias encrypt='gpg -r $GPG_KEY_ID --encrypt'
 
 # Default command options
 alias df='df -H'

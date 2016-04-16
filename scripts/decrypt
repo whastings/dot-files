@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var exec = require('child_process').execSync;
+
+var inFile = process.argv[2];
+var outFile = inFile.replace('.gpg', '');
+
+exec('gpg --output ' + outFile + ' --decrypt ' + inFile);
