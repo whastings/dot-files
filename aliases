@@ -100,3 +100,10 @@ alias rc='bundle exec rails console'
 
 # Networking
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
+
+# For SVN:
+alias sclean="svn status | grep '^\?' | sed 's/? *//' | xargs -I%  rm -fr %"
+alias sdiff='svn diff | less'
+alias slog='svn log | less'
+alias sreset='svn revert -R .'
+alias sstat='svn st'
