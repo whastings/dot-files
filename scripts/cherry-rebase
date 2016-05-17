@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+SOURCE_BRANCH=$1
+TARGET_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+TMP_BRANCH=cherry-rebase-tmp
+
+git checkout $SOURCE_BRANCH
+git checkout -b $TMP_BRANCH
+git cherry-pick $TARGET_BRANCH
+git branch -D $TARGET_BRANCH
+git checkout -b $TARGET_BRANCH
+git branch -d $TMP_BRANCH
