@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+is_running=$(docker inspect --format="{{ .State.Running }}" pg 2> /dev/null)
+
+if [[ "$is_running" -eq "false" ]]; then
+  docker start pg
+fi
+
+docker exec -it pg psql -U root
