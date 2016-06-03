@@ -107,3 +107,9 @@ alias sdiff='svn diff | less'
 alias slog='svn log | less'
 alias sreset='svn revert -R .'
 alias sstat='svn st'
+
+# Docker-powered services:
+alias pgstart='docker start pg'
+alias pgstop='docker stop pg'
+alias pgconnect='docker exec -it pg psql -U root'
+alias pgremove='docker rm pg'
