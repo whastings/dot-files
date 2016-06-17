@@ -86,6 +86,7 @@ alias amend='git commit --amend --date="$(date)"'
 alias gr='git remote'
 alias gm='git merge'
 alias unstage='git reset HEAD'
+alias gcp='git cherry-pick'
 
 # For Drush
 alias dall='drush cc all'
