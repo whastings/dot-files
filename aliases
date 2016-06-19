@@ -21,6 +21,7 @@ alias v='vim'
 alias work='cd $work'
 alias dc='docker-compose'
 alias encrypt='gpg -r $GPG_KEY_ID --encrypt'
+alias install-node-modules='npm i -g $(echo $NODE_GLOBAL_MODULES)'
 
 # Default command options
 alias df='df -H'
