@@ -1,4 +1,4 @@
-if [ "$PROMPT_NO_GIT" == "true" ]; then
+if [ "$PROMPT_NO_GIT" = "true" ]; then
   PROMPT='%{$FG[118]%}%3~%B$%b%{$reset_color%} '
 else
   PROMPT='%{$FG[118]%}%3~%B$(git_prompt_info)$%b%{$reset_color%} '
