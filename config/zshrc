@@ -36,7 +36,6 @@ ZSH_CUSTOM=$DOT_FILES/zsh
 plugins=(vi-mode bundler extract rails whastings)
 source $ZSH/oh-my-zsh.sh
 
-# Enter tmux if we want it.
-if [ "$TMUX_OFF" = "true" ]; then
+if [[ "$TMUX_OFF" != "true" ]]; then
   $DOT_FILES/scripts/enter-default-tmux
 fi
