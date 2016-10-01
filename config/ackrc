@@ -1,0 +1,5 @@
+--type-set=hbs:ext:hbs
+--type-set=js:ext:js,jsx
+
+--ignore-dir=dist
+--ignore-dir=tmp
