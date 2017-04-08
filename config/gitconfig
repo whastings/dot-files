@@ -4,7 +4,10 @@
 [user]
   name = Will Hastings
   email = will@objectdotcreate.net
-
+[alias]
+  b = branch
+  co = checkout
+  st = status
 [color]
   ui = always
 [color "branch"]
