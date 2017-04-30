@@ -1,6 +1,6 @@
 # SHORTCUTS:
 
-git_status() { \print; zle accept-line; gsts; zle accept-line }
+git_status() { \print; zle accept-line; gst; zle accept-line }
 zle -N git_status
 bindkey '^s' git_status
 
