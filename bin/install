@@ -2,7 +2,6 @@
 
 DOT_FILES="$HOME/dot-files"
 CONFIG_DIR="$DOT_FILES/config"
-RUBY_VERSION=2.2.0
 
 source $DOT_FILES/config/install_vars
 
