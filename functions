@@ -28,7 +28,7 @@ function s() {
 # - http://broken-by.me/lazy-load-nvm/
 # - https://gist.github.com/fl0w/07ce79bd44788f647deab307c94d6922
 lazynvm() {
-  unset -f nvm node npm vim
+  unset -f nvm node npm vim yarn
   if [ -f ~/.nvm/nvm.sh ]; then
     source ~/.nvm/nvm.sh
     nvm alias default $NODE_VERSION > /dev/null
@@ -49,6 +49,11 @@ node() {
 npm() {
   lazynvm
   npm $@
+}
+
+yarn() {
+  lazynvm
+  yarn $@
 }
 
 # Do vim too since it needs eslint.
