@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-boot2docker start --memory=4096
-sudo b2d_nfs

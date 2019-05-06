@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-# Convert tabs in a file to spaces.
-
-expand -t 2 $1 > $1.tmp
-rm $1
-mv $1.tmp $1

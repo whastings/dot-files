@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-# Helps with starting a new tmux session.
-# Source: https://github.com/ruggeri/dotfiles
-
-if [ "$TMUX" == '' ]; then
-  tmuxinator start home
-fi
