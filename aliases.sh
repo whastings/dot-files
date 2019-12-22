@@ -7,3 +7,8 @@ alias gco="git checkout"
 alias gds="git diff --staged"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr)%C(bold blue) <%an>%Creset%C(yellow)%d%Creset' --abbrev-commit"
 alias gst="git status"
+
+# Navigation:
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
