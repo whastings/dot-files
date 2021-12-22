@@ -1,4 +1,10 @@
-source '/Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh'
+if [ ! -f $DOTFILES/vendor/git-prompt.sh ]; then
+  mkdir -p $DOTFILES/vendor
+  curl -o $DOTFILES/vendor/git-prompt.sh \
+    https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+fi
+
+source $DOTFILES/vendor/git-prompt.sh
 
 function parse_git_dirty {
   [[ $(git status --porcelain 2> /dev/null) ]] && echo "*"
